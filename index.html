@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GA Travel and Tours: Your gateway to unforgettable adventures worldwide.">
+    <title>GA Travel and Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDUiIGZpbGw9IiMwMDdiZmYiLz48dGV4dCB4PSI1MCIgeT0iNTUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkdBPC90ZXh0PjxwYXRoIGQ9Ik0yMCAyMCBMODAgMjAgTDgwIDgwIEwyMCA4MCBaIiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiLz48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSIxMCIgZmlsbD0id2hpdGUiLz48L3N2Zz4=" type="image/svg+xml">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="#007bff"/>
+                <text x="50" y="55" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle">GA</text>
+                <path d="M20 20 L80 20 L80 80 L20 80 Z" fill="none" stroke="white" stroke-width="3"/>
+                <circle cx="50" cy="50" r="10" fill="white"/>
+            </svg>
+            <h1>GA Travel and Tours</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Discover the World with GA Travel and Tours</h2>
+        <p>Embark on personalized journeys to breathtaking destinations. Let us craft your dream vacation.</p>
+        <button onclick="scrollToSection('tours')">Start Exploring</button>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>✈️ Flight Bookings</h3>
+                <p>Seamless flight reservations to global hotspots at unbeatable rates.</p>
+            </div>
+            <div class="service">
+                <h3>🏨 Hotel Reservations</h3>
+                <p>Luxury stays and budget options tailored to your preferences.</p>
+            </div>
+            <div class="service">
+                <h3>🗺️ Guided Tours</h3>
+                <p>Expert-guided adventures with cultural insights and thrills.</p>
+            </div>
+            <div class="service">
+                <h3>🎒 Custom Packages</h3>
+                <p>Bespoke itineraries for families, couples, or solo travelers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tours">
+        <h2>Featured Tours</h2>
+        <div class="carousel">
+            <div class="tour active">
+                <img src="https://via.placeholder.com/400x250?text=European+Adventure" alt="European Adventure Tour">
+                <h3>European Adventure</h3>
+                <p>10 days exploring Paris, Rome, and Barcelona.</p>
+                <p><strong>$2,500</strong></p>
+            </div>
+            <div class="tour">
+                <img src="https://via.placeholder.com/400x250?text=Asian+Discovery" alt="Asian Discovery Tour">
+                <h3>Asian Discovery</h3>
+                <p>Tokyo, Bangkok, and Bali in 12 days.</p>
+                <p><strong>$3,000</strong></p>
+            </div>
+            <div class="tour">
+                <img src="https://via.placeholder.com/400x250?text=African+Safari" alt="African Safari Tour">
+                <h3>African Safari</h3>
+                <p>Wildlife wonders in Kenya and Tanzania.</p>
+                <p><strong>$4,000</strong></p>
+            </div>
+        </div>
+        <button class="carousel-btn" onclick="nextTour()">Next Tour</button>
+    </section>
+
+    <section id="about">
+        <h2>About GA Travel and Tours</h2>
+        <p>Founded with a passion for exploration, GA Travel and Tours specializes in creating safe, exciting, and personalized travel experiences. Our team of experts ensures every detail is perfect.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+            <input type="email" id="email" name="from_email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GA Travel and Tours. All rights reserved. | Follow us on social media.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
